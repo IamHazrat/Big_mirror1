@@ -1,0 +1,60 @@
+body{
+	background-image: url(image/dream.jpg);
+
+	padding-top: 70px;
+
+}
+
+
+ul{
+	text-decoration: none;    
+	list-style: none;        /*bulletin k lie hua h*/
+	margin-left: 0;
+	padding:0;
+}
+ul li a{
+	text-decoration: none;    /* underline k lie use hua h*/
+	color: red;
+	display: block;				/*isse ek box me dikhega koi v link rahega to  agar nahi arenge to jahan talk text hoga bas wo area color hoga*/
+}
+ul li {
+	float: left;
+	width: 200px;				/*ye decide kar raha hai ki box jo banega jissme link rahega jaise service to uska lenght kitna bara hoga*/
+	height: 40px;				/*ye batayega k kitna height hoga box ka*/
+	background-color:black;
+	font-size: 20px;
+	line-height: 40px;         /*issko nahi karne se list wala item just oopar hi  rahega magar hume usko center me karna */
+	text-align: center;        /*issko karne se jo link he wo left se suro nahi hoga balki center me hoga*/
+	opacity: .7; 
+
+	
+
+
+}
+ul li a:hover{
+	background-color: green;   /*agar hum sirf color use karoonga to jo likha h wo color ful dikhega*/
+	font-size:  23px;
+	color:white;
+
+}
+ul li ul li{
+	display: none;       /* issko use nahi karenge to list jo service me hai wo dropo hokar dikhega*/
+	opacity: .8; 
+	          
+}
+
+ul li ul li a:hover{
+	background-color: orange;
+	color: white;
+}
+
+
+
+
+
+
+
+ul li:hover ul li{
+	display: block;
+
+}
